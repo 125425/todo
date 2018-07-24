@@ -4,11 +4,18 @@
             <meta charset="utf-8">
     </head>
     <body>
-        <input type="checkbox" name="todo1" value="a1">1.Открыть чайник </br>
-        <input type="checkbox" name="todo2" value="a2">2.Налить воду в чайник </br>
-        <input type="checkbox" name="todo3" value="a3">3.Вскипятить воду в чайнике</br>
-        <input type="checkbox" name="todo4" value="a4">4.Заварить чай</br>
-        <button type="button">Добавить дело</button>
-        <button type="button">Удалить отмеченные дела</button>
+        <ol id="list">
+                <li> <input type="checkbox" name="todo1" value="a1">Открыть чайник</li> </br>
+                <li>   <input type="checkbox" name="todo2" value="a2">Налить воду в чайник</li> </br>
+                <li> <input type="checkbox" name="todo3" value="a3">Вскипятить воду в чайнике</li></br>
+                <li> <input type="checkbox" name="todo4" value="a4">Заварить чай</li></br></br>
+        </ol>
+        <button type="button">Добавить дело</button> </br></br>
+        <input id="input-todo" type="text" name="input-todo" placeholder="Что нужно сделать?"></br> </br>
+        <button id="save" type="button" >Сохранить</button> </br> </br>
+        <button type="reset">Удалить отмеченные дела</button>
+
+        <script src="./todo.js">
+        </script>
     </body>
 </html>

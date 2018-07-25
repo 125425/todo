@@ -5,15 +5,15 @@
     </head>
     <body>
         <ol id="list">
-                <li> <input type="checkbox" name="todo1" value="a1">Открыть чайник</li> </br>
-                <li>   <input type="checkbox" name="todo2" value="a2">Налить воду в чайник</li> </br>
-                <li> <input type="checkbox" name="todo3" value="a3">Вскипятить воду в чайнике</li></br>
-                <li> <input type="checkbox" name="todo4" value="a4">Заварить чай</li></br></br>
+                <li> <input type="checkbox"  value="a1">Открыть чайник</li> </br>
+                <li> <input type="checkbox"  value="a2">Налить воду в чайник</li> </br>
+                <li> <input type="checkbox"  value="a3">Вскипятить воду в чайнике</li></br>
+                <li> <input type="checkbox"  value="a4">Заварить чай</li>
         </ol>
-        <button type="button">Добавить дело</button> </br></br>
-        <input id="input-todo" type="text" name="input-todo" placeholder="Что нужно сделать?"></br> </br>
+        <button id="addTodo" type="button">Добавить дело</button> </br></br>
+  <div id="stringAdd" style="display:none">    <input id="input-todo" type="text"  placeholder="Что нужно сделать?"></br> </br> </div>
         <button id="save" type="button" >Сохранить</button> </br> </br>
-        <button type="reset">Удалить отмеченные дела</button>
+        <button id="deleteChecked" type="reset">Удалить отмеченные дела</button>
 
         <script src="./todo.js">
         </script>

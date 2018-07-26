@@ -13,10 +13,11 @@ var newTodo = document.createElement('li');
 
     save.onclick = function() {                                   //добавление по кнопке
         var input = document.getElementById("input-todo").value;
-        var newTodo = document.createElement('li');
-        newTodo.innerHTML = "<input type=\"checkbox\" value=\"a${index}\">" + input;
-
+        var newTodo = document.createElement('li');     
+        newTodo.innerHTML = `<input type="checkbox" value="a">  ${input}`;
         list.appendChild(newTodo);
+        document.getElementById("input-todo").value = '';
+     
     };
 
     addTodo.onclick = function() {                                          //добавление развертывания кнопки:hidden->text
@@ -24,14 +25,7 @@ var newTodo = document.createElement('li');
             document.getElementById("stringAdd").style.display = "";}
         else {document.getElementById("stringAdd").style.display = "none";
         }
-    }
-     
-    /*deleteChecked.onclick = function() {
-       var checkCompleted = document.getElementById("input-todo");
-        if (checkCompleted.checked) {      
-    list.removeChild(checkCompleted);
-        } else return
-    }; */
+    }   
 
  
 

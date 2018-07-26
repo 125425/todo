@@ -26,6 +26,23 @@ var newTodo = document.createElement('li');
         }
     }
      
+    /*deleteChecked.onclick = function() {
+       var checkCompleted = document.getElementById("input-todo");
+        if (checkCompleted.checked) {      
+    list.removeChild(checkCompleted);
+        } else return
+    }; */
+
+ 
+
+  deleteChecked.onclick = function() {
+        var elems = document.querySelectorAll('#list input[type="checkbox"]:checked');
+     for (i = 0; i < elems.length; i++) { 
+        list.removeChild(elems[i].parentElement);
+    }
+    } 
 
 
+
+   
     

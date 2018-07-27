@@ -2,21 +2,24 @@
 <html>
     <head>
             <meta charset="utf-8">
+            <title>TODO</title>
             <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
+            <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <ol id="list">
-                <li> <input type="checkbox"  value="a1" >Открыть чайник</li> </br>
-                <li> <input type="checkbox"  value="a2" >Налить воду в чайник</li> </br>
-                <li> <input type="checkbox"  value="a3">Вскипятить воду в чайнике</li></br>
-                <li> <input type="checkbox"  value="a4">Заварить чай</li>
+        <h1>todos</h1>
+            <ol id="list">
+                <li> <input type="checkbox"  value="a1" > Открыть чайник</li> 
+                <li> <input type="checkbox"  value="a2" > Налить воду в чайник</li> 
+                <li> <input type="checkbox"  value="a3"> Вскипятить воду в чайнике</li>
+                <li> <input type="checkbox"  value="a4"> Заварить чай</li>
         </ol>
+    <section>
         <button id="addTodo" type="button">Добавить дело</button> </br></br>
-  <div id="stringAdd" style="display:none">    <input id="input-todo" type="text"  placeholder="Что нужно сделать?"></br> </br> </div>
-        <button id="save" type="reset" >Сохранить</button> </br> </br>
-        <button id="deleteChecked" type="reset">Удалить отмеченные дела</button>
-
+        <div id="stringAdd" style="display:none">    <input id="input-todo" type="text"  placeholder="Что нужно сделать?"></br> </br> </div>
+        <button id="save" type="button" >Сохранить</button> 
+        <button id="deleteChecked" type="button">Удалить отмеченные дела</button>
+    </section>
         <script src="./todo.js">
         </script>
     </body>

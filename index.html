@@ -9,16 +9,16 @@
     <body>
         <h1>todos</h1>
             <ol id="list">
-                <li> <input type="checkbox"  value="a1" > Открыть чайник</li> 
-                <li> <input type="checkbox"  value="a2" > Налить воду в чайник</li> 
-                <li> <input type="checkbox"  value="a3"> Вскипятить воду в чайнике</li>
-                <li> <input type="checkbox"  value="a4"> Заварить чай</li>
+                <li> <input type="checkbox"  value="a1" > Открыть чайник <button id="deleteTodo" type="button">Удалить дело</button></li> 
+                <li> <input type="checkbox"  value="a2" > Налить воду в чайник <button id="deleteTodo" type="button">Удалить дело</button></li> 
+                <li> <input type="checkbox"  value="a3"> Вскипятить воду в чайнике <button id="deleteTodo" type="button">Удалить дело</button></li>
+                <li> <input type="checkbox"  value="a4"> Заварить чай <button id="deleteTodo" type="button">Удалить дело</button></li>
         </ol>
     <section>
         <button id="addTodo" type="button">Добавить дело</button> </br></br>
         <div id="stringAdd" style="display:none">    <input id="input-todo" type="text"  placeholder="Что нужно сделать?"></br> </br> </div>
         <button id="save" type="button" >Сохранить</button> 
-        <button id="deleteChecked" type="button">Удалить отмеченные дела</button>
+        <button id="deleteChecked" type="button">Удалить отмеченные дела</button>        
     </section>
         <script src="./todo.js">
         </script>

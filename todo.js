@@ -1,20 +1,7 @@
-/*save.onclick = function() {
-    var input = document.getElementById("input-todo").value;
-    alert(input);
-};
-
-var input = document.getElementById("input-todo").value;
-var newTodo = document.createElement('li');
-    newTodo.innerHTML = input;
-
-    list.appendChild(newTodo);
-*/
-
-
     save.onclick = function() {                                   //добавление по кнопке
         var input = document.getElementById("input-todo").value;
         var newTodo = document.createElement('li');     
-        newTodo.innerHTML = `<input type="checkbox" value="a">  ${input}`;
+        newTodo.innerHTML = `<input type="checkbox" value="a">  ${input} <button id="deleteTodo" type="button">Удалить дело</button>`;
         list.appendChild(newTodo);
         document.getElementById("input-todo").value = '';
      
@@ -30,13 +17,15 @@ var newTodo = document.createElement('li');
  
 
   deleteChecked.onclick = function() {
-        var elems = document.querySelectorAll('#list input[type="checkbox"]:checked');
+        var elems = document.querySelectorAll(`#list input[type="checkbox"]:checked`);
      for (i = 0; i < elems.length; i++) { 
         list.removeChild(elems[i].parentElement);
     }
     } 
 
-
-
-   
+      $('#list').on('click', 'button', function(event){ // для многократного использования обработчика
+        var delTodo = event.target;
+        delTodo = delTodo.parentElement;
+        delTodo.remove();
     
+    })

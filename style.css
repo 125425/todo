@@ -197,6 +197,30 @@ li {
     color:#eb2f2f;
        }
 
+#allCheck {
+    border-radius: 30%;
+    height: 30px;
+    position: relative;
+    right: 190px;
+    width: 30px;
+}
+
+#allCheck:after {
+    color: #e9e6e4;;
+    content: "▼";
+    display: block;
+    font-size:20px;
+    height:20px;
+    position: absolute;
+    width:20px;
+    top: 2px;
+    right: 3px;    
+}
+
+#allCheck:hover:after{
+    color:#2da011;
+       }
+
 
 
 

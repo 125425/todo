@@ -34,19 +34,24 @@
 
 allCheck.onclick = function() {
    var allCheckPos = document.querySelectorAll(`input[type="checkbox"]:not(:checked)`);
-    if (allCheckPos.length !=0 ) {
-      cc.checked = true;    
-      cc1.checked = true; 
-      cc2.checked = true; 
-      cc3.checked = true; 
-    }
-
-    
+   var allCheckNoPos = document.querySelectorAll(`input[type="checkbox"]:checked`);
+  if (allCheckPos.length !=0 ) 
+   for (const item of allCheckPos){
+        item.checked = true;
+    } 
     else {
-      cc.checked = false;    
-      cc1.checked = false; 
-      cc2.checked = false; 
-      cc3.checked = false;
+     for (const itemNo of allCheckNoPos) {
+         itemNo.checked = false;
+     }
+    }
+} 
+/*
+var field = function() {
+    const checkField = document.querySelectorAll('#list');
+    if (!!checkField === true) {
+        return
+    } else {
+        document.querySelectorAll(#list).style.display == "none"
     }
 }
-
+*/

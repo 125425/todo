@@ -7,12 +7,13 @@
      
     };
 
-    addTodo.onclick = function() {                                          //добавление развертывания кнопки:hidden->text
+    /*
+    addTodo.onclick = function() {                                          //добавление развертывания кнопки:hidden->text (убрано за ненадобностью)
         if (document.getElementById("stringAdd").style.display == "none"){
             document.getElementById("stringAdd").style.display = "";}
         else {document.getElementById("stringAdd").style.display = "none";
         }
-    }   
+    }   */
 
  
 
@@ -31,4 +32,21 @@
     })
 
 
-    //<img alt=""  src="./del.png" style="vertical-align:middle" />
+allCheck.onclick = function() {
+   var allCheckPos = document.querySelectorAll(`input[type="checkbox"]:not(:checked)`);
+    if (allCheckPos.length !=0 ) {
+      cc.checked = true;    
+      cc1.checked = true; 
+      cc2.checked = true; 
+      cc3.checked = true; 
+    }
+
+    
+    else {
+      cc.checked = false;    
+      cc1.checked = false; 
+      cc2.checked = false; 
+      cc3.checked = false;
+    }
+}
+

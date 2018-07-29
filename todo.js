@@ -1,7 +1,7 @@
     save.onclick = function() {                                   //добавление по кнопке
         var input = document.getElementById("input-todo").value;
         var newTodo = document.createElement('li');     
-        newTodo.innerHTML = `<input type="checkbox" value="a">  ${input} <button id="deleteTodo" type="button">Удалить дело</button>`;
+        newTodo.innerHTML = `<input type="checkbox" value="a" style="vertical-align:middle">  ${input} <button id="deleteTodo" type="button"></button>`;
         list.appendChild(newTodo);
         document.getElementById("input-todo").value = '';
      
@@ -29,3 +29,6 @@
         delTodo.remove();
     
     })
+
+
+    //<img alt=""  src="./del.png" style="vertical-align:middle" />

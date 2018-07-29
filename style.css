@@ -151,8 +151,7 @@ section {
 #list {
     background: white;
     width: 400px;
-    margin-left: 34%;
-    margin-right: 30%;
+    margin: auto;
     margin-bottom: 10px;
     border: 5px groove;
     font-size: 1.2em;
@@ -171,3 +170,34 @@ li {
     opacity:0.8;
     border: inset;
 }
+
+
+#deleteTodo {
+    		border-radius: 50%; /* кнопка теперь круглая */
+			box-shadow:  inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+			float:right;
+			height: 20px;
+			margin: 0;
+			position: relative;
+			width: 20px;			
+}
+
+#deleteTodo:after{
+    color:#e9e6e4;
+    content: "✖";
+    display: block;
+    font-size: 10px;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    left: 3px;
+	top: 1px;
+}
+
+#deleteTodo:hover:after{
+    color:#eb2f2f;
+       }
+
+
+
+

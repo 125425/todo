@@ -1,6 +1,6 @@
 # TODO
 
-https://125425.github.io/todo/ 
+https://shichin-eo.github.io/todo/
 
 Данный проект создан с целью изучения JS, HTML, CSS.
 
